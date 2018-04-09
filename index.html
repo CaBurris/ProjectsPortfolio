@@ -1,29 +1,77 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <title>Christy Burris</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale=1>
+        <title>Christy Burris</title>
+        <link href="css/styles.css" re;="stylesheet" type="text/css">
+    </head>
 
-<body>
-    <div class="prof-box">
-        <h1>Christy Burris</h1>
-        <img src="img/Headshot - Copy (3).jpg" class="prof-pic">
-        <h4>Front-End Web Developer | Game Designer</h4>
+    <body>
+        <header>
+            <h1>Christy Burris</h1>
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-        <div class="line-break"></div>
+    <section class="home-hero">
+        <h1 class="title">Making things look great
+                <span>for companies who make great stuff</span>
+        </h1>
+        <a href="" class="button button-accent">See My Work</a>
+    </section>
 
-        <p>
-            Novice programmer in HTML, CSS, and JavaScript.
-        </p>
-        <div class="social-icons">
-            <a href="https://www.linkedin.com/in/christy-burris/" target="_blank">
-                <img class="linkedin" src="img/linkedin.png">
-            </a>  <!-- linkedIn -->
-            <a href="https://teamtreehouse.com/christyburris" target="_black">
-                <img class="treehouse" src="img/treehouse.png">
-            </a> <!-- treehouse -->
-        </div> <!-- social icons -->
-    </div> <!-- prof-box -->
+    <section class="home-about">
+        <div class="home-about-textbox">
+            <h1></h1>
+            <p>I have been growing my skills in HTML, CSS, and JavaScript though TeamTreehouse.com since October and have found great passion in creating JavaScript games. I plan to continue enhancing my skills until I am able to reach my long term goals of creating Virtual Reality games for Educational purposes.</p>
+            <p></p>
+        </div>
+    </section>
+
+    <section class="portfolio">
+        <h1>Some of my Work</h1>
+
+        <!-- Snake -->
+        <figure class="snake">
+            <img src="img/snake.png" alt="portfolio item">
+            <figcaption class="snake-description">
+                <p>Snake Game in JavaScript</p>
+                <a href="https://caburris.github.io/SnakeGameJS/" class="button-accent button-small">Play this Game</a>
+            </figcaption>
+        </figure>
+
+        <!-- Tetris -->
+        <figure class="tetris">
+            <img src="img/tetris.png" alt="portfolio item">
+            <figcaption class="tetris-description">
+                <p>Tetris Game in JavaScript</p>
+                <a href="https://caburris.github.io/TetrisJS/" class="button-accent button-small">Play this Game</a>
+            </figcaption>
+        </figure>
+    </section>
+
+    <footer>
+
+        <div class="col-3">
+            <p>This is my footer</p>
+        </div>
+
+        <div class="col-1">
+            <ul class="unstyled-list">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
+    </body>
+</html>
