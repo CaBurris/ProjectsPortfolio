@@ -1,0 +1,163 @@
+
+html {
+  background: url(../img/background5.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: "Calabria", sans-serif;
+  color: white;
+}
+
+.prof-box {
+    width: 400px;
+    height: 550px;
+    background: rgba(0,0,0,.4);
+    padding: 40px;
+    color: white;
+    margin: 0 auto;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.prof-pic {
+    border-radius: 40%;
+    height: 200px;
+    width: 270px;
+}
+
+h1 {
+    font-weight: 100px;
+    letter-spacing: 6;
+    font-size: 40px;
+}
+
+/*-----IMAGES----*/
+.social-icons {
+    display: flex;
+    justify-content: center;
+
+}
+.social-icons a {
+    color: white;
+    padding: 10px;
+}
+
+.social-icons a:hover {
+    background: rgba(0,0,0,.4);
+}
+
+.linkedin {
+    height: 50px;
+    width: 50px;
+}
+
+.treehouse {
+    height: 50px;
+    width: 60px;
+}
+.degree {
+    width: 300px;
+    height: 300px;
+}
+.grad {
+    width: 300px;
+    height: 400px;
+}
+
+.snapshot {
+    height: 80%;
+    //height: 30px;
+    width: 90%;
+}
+.img-wrap {
+
+}
+
+/*-----IMAGES----*/
+
+.line-break {
+    width: 400px;
+    border-top: 1px solid white;
+    margin: 0 auto;
+}
+
+/*---------------- Body _________*/
+
+
+
+/*--------NAVIGATION------*/
+nav a:hover {
+    background: rgba(0,0,0,.4);
+}
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    list-style-type: none;
+    //padding: 40px;
+    justify-content: center;
+    margin: 0 auto;
+    //margin-right: 50px;
+    color: white;
+}
+
+nav li a {
+    padding: 10px;
+    display: block;
+    color: pink;
+}
+/*--------NAVIGATION------*/
+
+
+/* Trial code */
+.container {
+    display: flex;
+    flex-direction: row;
+    background: rgba(0,0,0,.4);
+    color: white;
+    margin: 40px;
+    text-align: center;
+    padding: 30px;
+    overflow: hidden;
+}
+p,
+ul{
+    //border: 1px solid;
+    padding: 2px 5px;
+    overflow: hidden;
+}
+.col {
+    flex:1;
+}
+/*----JUST ADDED TO FIX IMGS SIZING-------*/
+/*
+.img-wrap{
+    width: 200px;
+     height: 150px;
+     position: relative;
+     display: inline-block;
+     overflow: hidden;
+     margin: 0;
+}
+div > img {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-height: 100%;
+  min-width: 100%;
+  transform: translate(-50%, -50%);
+}
+*/
+/* Trial code */
+
+
+/*-------------- Media Queries -----------------*/
+/*---- small screens ----*/
+/*------ Switching from device specific to CONTENT SPECIFIC ------ */
+@media only screen and (max-width: 570px) {
+
+@media only screen and (min-width: 850px) {
+
+@media only screen and (min-width: 1140px) {
