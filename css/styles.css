@@ -3,6 +3,7 @@ url('https://fonts.google.com/specimen/Raleway?selection.family=Raleway:300,400,
 
 * {
     box-sizing: border-box;
+    transition: all ease-in-out 250ms;
 }
 
 body {
@@ -13,9 +14,21 @@ body {
 
 img {
     max-width: 100%;
-    height: auto;
+    //height: auto;
+    max-height: 400px;
 
 }
+
+/*
+.snake-img {
+    height: 50vh;
+    //length: 500vh;
+}
+
+.tetris-img {
+    height: 50vh;
+}
+*/
 
 .container {
     width: 95%;
@@ -72,12 +85,22 @@ p:last-of-type {
 ================= */
 .button {
     display: inline-block;
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     text-decoration: none;
     text-transform: uppercase;
     border-width: 2px;
     border-style: solid;
     padding: .5em 1.75em;
+}
+@media (min-width: 50rem) {
+    .buttom {
+        font-size: 1.5rem;
+    }
+}
+
+.button-small {
+    font-size: .7rem;
+    font-weight: 700;
 }
 
 .button-accent {
@@ -91,11 +114,7 @@ p:last-of-type {
     color: #232323;
 }
 
-@media (min-width: 50rem) {
-    .buttom {
-        font-size: 1.5rem;
-    }
-}
+
 
 /* header
 ================= */
@@ -162,7 +181,6 @@ nav a:focus {
         height: 100vh;
         padding-top: 35vh;
     }
-}
 
 /* hero-about
 ================= */
@@ -205,9 +223,9 @@ nav a:focus {
     }
 
     .home-about {
-        background-image: url(../img/headshot.jpg);
+        background-image: url(../img/sophia.jpg);
         background-repeat: no-repeat;
-        background-size: 100vw;
+        background-size: 90vw;
         padding-bottom: 10em;
     }
 
@@ -226,5 +244,63 @@ nav a:focus {
         top: .7em;
         padding: 0 .6em;
         background-color: rgba(0, 0, 0, .80);
+    }
+}
+
+/* portfolio
+================= */
+
+.portfolio {
+    margin: 3em 0;
+}
+
+.port-item {
+    margin: 0;
+    position: relative;
+}
+
+.port-item img {
+    display: block;
+    height: 80vh;
+    padding: 10px;
+
+}
+
+.port-desc {
+    position: absolute;
+    z-index: 100;
+    bottom: 2em;
+    left: 3em;
+    right: 3em;
+    color: white;
+    background: rgba(50, 0, 0,  .75);
+    padding-bottom: 1em;
+
+}
+
+.port-desc p {
+    margin: 1em;
+}
+
+@media (min-width: 50rem) {
+    .port-item{
+        width: 50%;
+        float: left;
+    }
+}
+
+@media (min-width: 60rem) {
+    .port-item{
+        width: 33.33333333334;
+        overflow: hidden;
+
+    }
+
+    .port-desc {
+        transform: translate(150%);
+    }
+
+    .port-item:hover{
+        transform: translateY(0%);
     }
 }
